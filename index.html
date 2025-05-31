@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!---->
+    <script>
+  function validateForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("All fields must be filled out before sending the message.");
+      return false; 
+    }
+
+    
+    window.location.href = "thankyou.html";
+    return false; 
+  }
+</script>
+
+
+    <title>My Portofolio</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-pills fixed-top " id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">CharlieINC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto ">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+              <a class="nav-link" href="#projects">Project</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Section ABout -->
+    <section class="min-vh-100 d-flex align-items-center py-5" id="about" style="padding-top: 80px;">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 order-lg-1 order-2">
+                    <h1 class="main-header">
+                        Welcome! I Am
+                        <br>
+                        <span class="text-primary">Charlie</span>
+                    </h1>
+                    <p class="text-content fw-bold mb-4"> <!-- Tambah mb-4 -->
+                        Saya adalah seorang web developer yang berpengalaman dalam mengembangkan aplikasi web menggunakan berbagai teknologi modern. 
+                        Dengan keahlian dalam HTML, CSS, JavaScript, dan framework seperti Bootstrap, saya menciptakan solusi digital yang responsif dan menarik. 
+                        Saya juga memiliki pengalaman dalam pengembangan backend dengan PHP dan Laravel, serta analisis data menggunakan Python.
+                    </p>
+                    <div class="mt-4"> <!-- Tambah wrapper div -->
+                        <a href="images/porto.png" class="btn btn-primary btn-lg shadow-lg" target="_blank">Portofolio</a>
+                    </div>
+                </div>
+                <!-- photo hero -->
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <img src="images/charlie.jpg" class="my-photo" height="500">
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Section Project -->
+      <section class="my-5" id="projects">
+        <div class="container ">
+              <h2 class="section-header text-center">Projects</h2>
+
+            <!-- CARD -->
+        <div class="row gy-4">
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card h-100">
+                    <div class="ratio ratio-16x9">
+                        <img src="images/p1.jpg" class="card-img-top" alt="project-coding">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">HTML CSS</h5>
+                      <p class="card-text text-content">
+                        Saya mengembangkan website portofolio pribadi menggunakan HTML5, CSS3, dan Bootstrap 5. 
+                        Proyek ini mencakup desain responsif, navigasi smooth scroll, dan optimasi SEO dasar untuk meningkatkan visibilitas.
+                      </p>  
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                        <img src="images/p2.jpg" class="card-img-top" alt="project-coding">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Bootstrap 5</h5>
+                      <p class="card-text text-content">Saya membuat landing page restoran dengan Bootstrap 5, menambahkan Google Maps API untuk lokasi, dan animasi interaktif. 
+                        Hasilnya, website ini sepenuhnya responsif dan meningkatkan konversi pemesanan online.</p>  
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                        <img src="images/p3.jpg" class="card-img-top" alt="project-coding">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Javascript</h5>
+                      <p class="card-text text-content">Saya membangun aplikasi To-Do List dengan JavaScript ES6 dan LocalStorage. 
+                        Fitur CRUD memungkinkan pengguna menambah, mengedit, dan menghapus tugas, dengan penyimpanan data lokal yang efisien.</p>  
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                        <img src="images/4.jpg" class="card-img-top" alt="project-coding">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Laravel 6</h5>
+                      <p class="card-text text-content">Saya mengembangkan sistem manajemen inventaris berbasis Laravel 9 dengan MySQL. 
+                        Fitur termasuk autentikasi multi-role, dashboard analitik, dan notifikasi otomatis untuk stok habis.</p>  
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                        <img src="images/p5.jpg" class="card-img-top" alt="project-coding">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">PHP & MySQL</h5>
+                      <p class="card-text text-content">Saya merancang aplikasi e-learning sederhana dengan PHP Native dan MySQL. 
+                        Sistem ini mendukung login/register, upload materi kursus, dan telah diuji oleh 100+ pengguna.</p>  
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                        <img src="images/p6.jpg" class="card-img-top" alt="project-coding">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Python</h5>
+                      <p class="card-text text-content">Saya melakukan analisis data harga saham menggunakan Python dengan library Pandas dan Matplotlib. 
+                        Proyek ini menghasilkan visualisasi data dan prediksi tren sederhana.</p>  
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Section Gallery -->
+        <section class="my-5" id="gallery">
+            <div class="container">
+                <h2 class="section-header text-center">Gallery</h2>
+            <div class="row g-0 align-items-center justify-content-center">
+                <div class="col-md-4 col-6">
+                    <div class="ratio ratio-1x1">
+                        <img src="images/gallery/g1.jpg" alt="gallery">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="ratio ratio-1x1">
+                        <img src="images/gallery/g2.jpg" alt="gallery">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="ratio ratio-1x1">
+                        <img src="images/gallery/g3.jpg" alt="gallery">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="ratio ratio-1x1">
+                        <img src="images/gallery/g4.jpg" alt="gallery">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="ratio ratio-1x1">
+                        <img src="images/gallery/g5.jpg" alt="gallery">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="ratio ratio-1x1">
+                        <img src="images/gallery/g6.jpg" alt="gallery">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Contactt Me -->
+            <section class="my-5" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class="section-header text-md-start textt-center">Contact Me</h2>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope me-2"></i>
+                                <span>charlietulus2@gmail.com</span>
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                <span>+62-8345-566-8322</span>  
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <form action="thankyou.html" method="=GET" onsubmit="return validateForm()">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                            <div class="mb-3">
+                                              <label for="name" class="form-label fw-bold">Name:</label>
+                                              <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                                            </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label fw-bold">Email:</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label fw-bold">Message:</label>
+                                        <textarea name="message" id="message" class="form-control" rows="6" autocomplete="off"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary col-md-2 col-6">Send</button>
+                            </form>
+                        </div>
+                    </div>        
+                </div>
+            </section>    
+        </div>
+    </section>    
+</section>
+<!-- Footer -->
+<footer class="footer-brand text-content py-5 border-top">
+    CharlieINC &copy; 2025. All rights reserved.
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</body>
+</html>
